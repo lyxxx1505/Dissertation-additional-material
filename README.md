@@ -5,6 +5,7 @@ This repository contains supplementary materials for the study of ESG news senti
 For example:To search for “responsible investment”, the code parameter was set as: QUERY = '"responsible investment"'
 The output was saved as: csv_path = "guardian_responsibleinvestment_2018_2025_analytics.csv"
 In total, 19 keywords were used to generate datasets. Note that “esg”, “environmental, social and governance” and “environmental social and governance” are combined into a single dataset.
+
 (2) 'Codes' folder, Contains the core Python scripts used for data collection, data merge, pre-processing, topic modeling, and sentiment analysis:
 dataset_code.py: Retrieves ESG news data from The Guardian API by looping over keywords. Outputs datasets named after the keywords.
 dataset_merge.py: Merges the 19 datasets into a single file, removes duplicates, and filters out irrelevant articles not related to ESG. The cleaned dataset is then used for LDA topic modeling and sentiment analysis.
